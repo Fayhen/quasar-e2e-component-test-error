@@ -1,6 +1,8 @@
 <template>
   <q-layout>
-    <component :is="component" v-bind="$attrs" />
+    <q-page-container>
+      <component :is="component" v-bind="$attrs" />
+    </q-page-container>
   </q-layout>
 </template>
 
@@ -8,7 +10,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'LayoutContainer',
+  name: 'QPageContainer',
   inheritAttrs: false,
   props: {
     component: {
