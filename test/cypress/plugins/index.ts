@@ -1,4 +1,5 @@
 /* eslint-env node */
+/* global Cypress */
 // ***********************************************************
 // This example plugins/index.ts can be used to load plugins
 //
@@ -12,16 +13,16 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
-import { injectDevServer } from '@quasar/quasar-app-extension-testing-e2e-cypress/cct-dev-server';
+import { injectDevServer } from '@quasar/quasar-app-extension-testing-e2e-cypress/cct-dev-server'
 
 const pluginConfig: Cypress.PluginConfig = async (on, config) => {
   // Enable component testing, you can safely remove this
   // if you don't plan to use Cypress for unit tests
   if (config.testingType === 'component') {
-    await injectDevServer(on, config);
+    await injectDevServer(on, config)
   }
 
-  return config;
-};
+  return config
+}
 
-export default pluginConfig;
+export default pluginConfig

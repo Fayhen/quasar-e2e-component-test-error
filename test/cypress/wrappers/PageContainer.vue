@@ -10,7 +10,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'QPageContainer',
+  name: 'PageContainer',
   inheritAttrs: false,
   props: {
     component: {

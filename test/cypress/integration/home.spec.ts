@@ -1,3 +1,5 @@
+/* global beforeEach, cy, describe, it */
+
 // Use `cy.dataCy` custom command for more robust tests
 // See https://docs.cypress.io/guides/references/best-practices.html#Selecting-Elements
 
@@ -6,12 +8,12 @@
 // This test will pass when run against a clean Quasar project
 describe('Landing', () => {
   beforeEach(() => {
-    cy.visit('/');
-  });
+    cy.visit('/')
+  })
   it('.should() - assert that <title> is correct', () => {
-    cy.title().should('include', 'Quasar');
-  });
-});
+    cy.title().should('include', 'Quasar')
+  })
+})
 
 // ** The following code is an example to show you how to write some tests for your home page **
 //

@@ -1,12 +1,12 @@
 /* global cy, describe, it */
 
 import { mount } from '@cypress/vue'
-import QPageContainer from 'app/test/cypress/wrappers/QPageContainer.vue'
+import PageContainer from 'app/test/cypress/wrappers/PageContainer.vue'
 import TestPageWithComponent from 'src/pages/TestPageWithComponent.vue'
 
 describe('TestPageWithComponent.vue', () => {
   it('renders', () => {
-    mount(QPageContainer, {
+    mount(PageContainer, {
       props: {
         component: TestPageWithComponent
       }
